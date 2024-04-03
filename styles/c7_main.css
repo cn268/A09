@@ -54,6 +54,7 @@ header img {
 }
 #nav_menu ul li {
     float: left;
+	position: relative;
 }
 #nav_menu ul li a {
     display: block;
@@ -87,6 +88,7 @@ header img {
     position: absolute;
     background-color: #800000;
     list-style: none;
+	text-align: left;
     margin: 0;
     padding: 0;
 }
