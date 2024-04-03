@@ -93,6 +93,10 @@ header img {
 #nav_menu ul li:hover .submenu {
     display: block;
 }
+/* Ensure submenu items are displayed vertically */
+.submenu li {
+    display: block;
+}
 /* the styles for the section */
 section {
 	width: 525px;
