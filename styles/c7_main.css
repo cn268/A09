@@ -71,7 +71,7 @@ header img {
 #nav_menu ul ul li {
 	float: none
 }
-#nav_menu ul li:hover > ul {
+#nav_menu ul li:hover .submenu {
 	display: block;
 }
 #nav_menu > ul::after {
