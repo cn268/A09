@@ -45,16 +45,18 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
-/* Nav Menu */
-#nav_menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* the styles for the navigation menu */
+#nav_menu {
     position: relative;
 }
-#nav_menu ul li {
-    float: left;
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 	position: relative;
+}
+#nav_menu ul li {
+	float: left;
 }
 #nav_menu ul li a {
     display: block;
@@ -66,44 +68,51 @@ header img {
     color: white;
     font-weight: bold;
 }
-#nav_menu li.current {
-    color: yellow
+#nav_menu li.current a {
+	color: yellow;
 }
 #nav_menu ul ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+}
+#nav_menu ul ul li {
+	float: none;
 }
 #nav_menu ul li:hover > ul {
-    display: block;
+	display: block;
 }
 #nav_menu > ul::after {
-    content: '';
+    content: "";
     clear: both;
     display: block;
 }
-/* Style rule for submenu */
+/* Style rule for the submenu */
 .submenu {
+	float: left;
+	overflow: hidden;
+	position: absolute;
+	/*
+    display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: #800000;
     list-style: none;
-	text-align: left;
     margin: 0;
     padding: 0;
+	*/
 }
+/* Display the submenu when hovering over the list item */
 #nav_menu li:hover .submenu {
     display: block;
 }
+
+/* Style rule for ::after pseudo-element */
 #nav_menu::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-/* Ensure submenu items are displayed vertically */
-.submenu li {
-	display: block;
-	float: none;
+    content: "";
+    display: block;
+    clear: both;
 }
 /* the styles for the section */
 section {
@@ -130,6 +139,7 @@ section blockquote {
 }
 section ul {
 	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
 }
 section li {
 	padding-bottom: .35em;
