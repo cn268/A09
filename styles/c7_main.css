@@ -95,8 +95,8 @@ header img {
 }
 /* Ensure submenu items are displayed vertically */
 .submenu li {
-	float: none;
 	display: block;
+	float: none;
 }
 /* the styles for the section */
 section {
