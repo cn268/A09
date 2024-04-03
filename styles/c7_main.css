@@ -92,8 +92,13 @@ header img {
     margin: 0;
     padding: 0;
 }
-#nav_menu ul li:hover .submenu {
+#nav_menu li:hover .submenu {
     display: block;
+}
+#nav_menu::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 /* Ensure submenu items are displayed vertically */
 .submenu li {
